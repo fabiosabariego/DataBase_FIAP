@@ -50,8 +50,8 @@ SELECT
     TRUNC((MONTHS_BETWEEN('31/12/2025', DT_NASCIMENTO) / 12), 0) AS IdadeAtual,
     (55 - TRUNC((MONTHS_BETWEEN('31/12/2025', DT_NASCIMENTO) / 12), 0)) AS AnosParaAposentar
 FROM DB_FUNCIONARIO
-WHERE TRUNC((MONTHS_BETWEEN('31/12/2025', DT_NASCIMENTO) / 12), 0) < 55
-ORDER BY DT_NASCIMENTO;
+WHERE TRUNC((MONTHS_BETWEEN('31/12/2025', DT_NASCIMENTO) / 12), 0) < 55;
+--ORDER BY DT_NASCIMENTO DESC;
 
 -- 3. Supondo que, apos aposentar, o funcionario passe a receber 70% do valor de seu salario atual, quanto ele recebera?
 
